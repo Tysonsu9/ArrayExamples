@@ -1,8 +1,10 @@
 /*
  * Example for Arrays
+ * 
  */
 
 import java.util.Scanner;
+
 
 class Main
 {
