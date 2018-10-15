@@ -149,6 +149,8 @@ class Main
          *          ar[3]=4
          */
         
+        for (int i = 0;
+        
          /*
           * Task 8
           *    Create an array called ar2odds
