@@ -192,8 +192,22 @@ class Main
         /*
          * Task 9. In the array ar2, count how many odd numbers you
          * have.  Then create an ew array called ar4.  Copy just the odd
-         * numbers from ar1 into ar4.  Print ar4
+         * numbers from ar2 into ar4.  Print ar4
          */
+        
+       int count =0;
+      for(int i=0; i<ar2.length; i++)
+        {
+        if(n%2==1)
+            {
+              count ++;  
+            }
+        }
+    
+        
+        
+        
+       
         
         /*
          * Task 10.  Shift the elements of ar4 right by 1
@@ -201,7 +215,19 @@ class Main
          * old   ar4: 1 3 5 7 9
          * new   ar4  9 1 3 5 7
          */
+         for (int i=0 ; i<ar4.length ; i++)
+             System.out.println(ar4[i]);
         
+         int temp10=ar4[ar4.length-1];
+         
+         for (int i=ar4.length-1 ; i>0 ; i--)
+            ar4[i]=ar4[i-1];
+         
+         ar4[0]=temp10;
+            
+         System.out.println("New ar4");
+         for (int i=0 ; i<ar4.length ; i++)
+             System.out.println(ar4[i]);
         
         /*
          * Task 11.  Reverse the order of elements in ar2
