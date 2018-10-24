@@ -215,24 +215,47 @@ class Main
          * old   ar4: 1 3 5 7 9
          * new   ar4  9 1 3 5 7
          */
-         for (int i=0 ; i<ar4.length ; i++)
+        
+         System.out.println("** Task 10 ** ");
+         System.out.println("Original ar4");
+         
+      int ar4[] = new int[ar4.length];  
+         
+      for (int i=0 ; i<ar4.length ; i++)
              System.out.println(ar4[i]);
         
-         int temp10=ar4[ar4.length-1];
+      int temp10=ar4[ar4.length-1];
          
-         for (int i=ar4.length-1 ; i>0 ; i--)
-            ar4[i]=ar4[i-1];
+      for (int i=ar4.length-1 ; i>0 ; i--)
+      ar4[i]=ar4[i-1];
          
-         ar4[0]=temp10;
+      ar4[0]=temp10;
             
          System.out.println("New ar4");
-         for (int i=0 ; i<ar4.length ; i++)
-             System.out.println(ar4[i]);
+      for (int i=0 ; i<ar4.length ; i++)
+       System.out.println(ar4[i]);
         
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
         
+         System.out.println("** Task 11 **");
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
+            
+        int ar2half = ar2.length/2; 
+        System.out.println(ar2half);
+        int task11Temp;
+        for (int i=0 ; i<ar2half ; i++)
+        {
+            task11Temp = ar2[i];
+            System.out.println(" "+i+":"+(ar2.length-i));
+            ar2[i] = ar2[ar2.length-1-i];
+            ar2[ar2.length-1-i]=task11Temp;
+        }
+               
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
         
         /*
          * Task 12: 
