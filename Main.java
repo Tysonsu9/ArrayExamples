@@ -273,9 +273,9 @@ class Main
          */
         
           int len5;
-          int count5=0;
           String s5="";
-          
+          String[] ar5=new String[16];
+           
           ar5[0]="Four";
           ar5[1]="score";
           ar5[2]="and";
@@ -292,12 +292,11 @@ class Main
           ar5[13]="a";
           ar5[14]="new";
           ar5[15]="nation";
-          
+          int count5=0; 
           for (int i=0; i<ar5.length; i++)
           {
-            s5=ar5[i];
-            if((length5=s5.length()) >4);
-            count5++;
+             if (ar5[i].length()>5)
+             count5++;
             
           }
 
