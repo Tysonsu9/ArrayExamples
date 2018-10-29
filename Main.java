@@ -206,25 +206,24 @@ class Main
          * old   ar4: 1 3 5 7 9
          * new   ar4  9 1 3 5 7
          */
-        
-         System.out.println("** Task 10 ** ");
+            System.out.println("** Task 10 ** ");
          System.out.println("Original ar4");
          
-      int ar4[] = new int[ar4.length];  
-         
-      for (int i=0 ; i<ar4.length ; i++)
+         int[] ar4 = new int[ ar1.length *2 ];
+         for (int i=0 ; i<ar4.length ; i++)
              System.out.println(ar4[i]);
         
-      int temp10=ar4[ar4.length-1];
+         int temp10=ar4[ar4.length-1];
          
-      for (int i=ar4.length-1 ; i>0 ; i--)
-      ar4[i]=ar4[i-1];
+         for (int i=ar4.length-1 ; i>0 ; i--)
+            ar4[i]=ar4[i-1];
          
-      ar4[0]=temp10;
+         ar4[0]=temp10;
             
          System.out.println("New ar4");
-      for (int i=0 ; i<ar4.length ; i++)
-       System.out.println(ar4[i]);
+         for (int i=0 ; i<ar4.length ; i++)
+             System.out.println(ar4[i]);
+        
         
         /*
          * Task 11.  Reverse the order of elements in ar2
@@ -317,7 +316,17 @@ class Main
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
-        
+        String[] monsterArray={ "Cookie", "Grover", "Oscar the Grouch" , "Elmo", "Rosita"};
+
+             for (int i=0 ; i<monsterArray.length; i++)
+        System.out.println(" [ "+i+"] "+monsterArray[i]);
+
+      for (int i=0 ; i<monsterArray.length; i++)
+    {
+       char c= monsterArray[i].toLowerCase().charAt(0);
+      if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u')
+        System.out.println(monsterArray[i]); 
+    }
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
@@ -333,6 +342,40 @@ class Main
           *      So arindex[0]=2
           *         arindex[1]=5
           */
+           int start = 3;
+  int end = 94;
+ int n14=end - start+1;
+ 
+ // This array will hold the number from "start" to "end"
+ int[] arx = new int[n14];
+
+ 
+
+    int count14index=0;
+
+ 
+ for (int i=0 ; i<n14 ; i++)
+{
+    arx[i]=start+i;
+    if (arx[i]%3==0)
+        count14index++;
+}
+
+
+int[] arxindex = new int[count14index];
+int k14=0;
+for (int i=0 ; i<n14 ; i++)
+{
+    if (arx[i]%3==0)
+    { 
+        arxindex[k14]=i;
+        k14++;
+    }
+}
+
+//Print out the array 
+for (int i=0 ; i<count14index; i++)
+    System.out.println(arxindex[i]);
          
          /*
           * Create an arrary called "fb" and calculate the
