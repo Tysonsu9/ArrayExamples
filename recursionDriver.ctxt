@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=recursionDriver
+comment0.text=\r\n\ Count\ \r\n\ 1.\ Number\ of\ legs\ 10\ elephant\ have\r\n\ 2.\ Number\ of\ students\ in\ a\ school\ if\ each\r\n\ class\ has\ 20\ students\ and\ there\ are\ 12\ rooms\r\n\ 3.\ Number\ of\ fingers\ if\ there\ are\ 8\ people\r\n\ 4.\ Find\ the\ sum\ of\ odd\ numbers\ from\ 0\ to\ N\r\n\ 5.\ Find\ the\ sum\ of\ even\ numbers\ from\ 0\ to\ N\r\n
+comment1.params=n
+comment1.target=int\ countNumbs(int)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=n
+comment3.target=int\ countStudents(int)
+numComments=4
